@@ -15,7 +15,10 @@ trained agents should be in Agent folder
 We provide a working implementation of a ddqn agent in the highway domain.
 
 ## Requirements:
-gym <= 0.19
+
+pip install -r requirements.txt
+
+make sure that: gym <= 0.19
 
 ### Dependencies:
 
@@ -24,6 +27,8 @@ highway-env - v1.5 - https://github.com/eleurent/highway-env/tree/v1.5
 rl-agents - https://github.com/eleurent/rl-agents
 
 ## Running
+
+
 run the file run.py
 
 All hyper parameters are there to control and adjust.
