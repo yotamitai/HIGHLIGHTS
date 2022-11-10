@@ -39,10 +39,12 @@ To run the HIGHLIGHTS algorithm: `python run.py`
 All hyper parameters can be observed and adjusted in in `run.py`.
 
 #### Important Parameters:
+
 1.`load_dir` - the path from which to load the agent traces `Traces.pkl` & `States.pkl`. If this is `None` then the algorithm will obtain execution traces which can later be used to skip this part.
+
 2.`num_highlights` - the number of highlight videos to output
+
 3.`trajectory_length` - the length of each video
-4. 
 
 # Example Implementation
 We provide a working implementation of a ddqn agent in the highway domain.
