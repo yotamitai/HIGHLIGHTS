@@ -3,32 +3,54 @@
 An implementation of the HIGHLIGHTS algorithm for Agent Policy Summarization: 
 #### Amir, Ofra, Finale Doshi-Velez, and David Sarne. "Summarizing agent strategies." Autonomous Agents and Multi-Agent Systems 33.5 (2019): 628-644.
 
-The HIGHLIGHTS algorithm requires a Q-value based RL agent.
+## Description:
+Strategy summarization techniques convey agent behavior by demonstrating the actions taken by the agent in a selected set of world states. The key question in this approach is then how to recognize meaningful agent situations.
 
-update the following files for your specific needs:
-get_agent.py
-
-get_traces.py
-
-trained agents should be in Agent folder
-
-We provide a working implementation of a ddqn agent in the highway domain.
+The HIGHLIGHTS algorithm extracts *important* states from execution traces of the agent based on some importance metric.
+Intuitively, a state is considered important if the decision made in that state has a substantial impact on the agent's utility.
 
 ## Requirements:
 
-pip install -r requirements.txt
+The HIGHLIGHTS algorithm receives as input a **trained** agent and it's simulation environment.
 
-make sure that: gym <= 0.19
+The agent must be Q-value based and have access to these values given an observation or state. 
 
-### Dependencies:
+## Setup:
+Install requirements:
 
-highway-env - v1.5 - https://github.com/eleurent/highway-env/tree/v1.5
+`pip install -r requirements.txt`
 
-rl-agents - https://github.com/eleurent/rl-agents
+make sure that: `gym <= 0.19`
+
+Any trained agents should be in the *Agents* folder
+
+## Utilizing Your Agent
+To run HIGHLIGHTS on your agent the follwing files must be updated:
+
+**get_agent.py**: In this file you must implement loading both your agent and its environment in the 'get_agent()' function.
+
+**get_traces.py**: In this file you must implement running a single trace while using the Trace and State classes.
+
 
 ## Running
+To run the HIGHLIGHTS algorithm: `python run.py`
+
+### Parameter tuning
+All hyper parameters can be observed and adjusted in in `run.py`.
 
 
-run the file run.py
+# Example Implementation
+We provide a working implementation of a ddqn agent in the highway domain.
 
-All hyper parameters are there to control and adjust.
+
+## Dependencies:
+
+The example implementation for the highway domain requires the following repositories:
+
+[highway-env - v1.5](https://github.com/eleurent/highway-env/tree/v1.5), [rl-agents](https://github.com/eleurent/rl-agents)
+
+
+
+
+
+
