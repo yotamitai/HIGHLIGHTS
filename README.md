@@ -54,7 +54,13 @@ We provide a working implementation of a ddqn agent in the highway domain.
 
 The example implementation for the highway domain requires the following repositories:
 
-[highway-env - v1.5](https://github.com/eleurent/highway-env/tree/v1.5), [rl-agents](https://github.com/eleurent/rl-agents)
+*  [highway-env - v1.4](https://github.com/eleurent/highway-env/tree/v1.4), 
+
+*  [rl-agents](https://github.com/eleurent/rl-agents) - make sure to install as described in the README with:
+
+`pip install git+https://github.com/eleurent/rl-agents`
+
+After installing rl-agents you'll need to downgrade gym to the required version
 
 
 
