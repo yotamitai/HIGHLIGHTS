@@ -37,7 +37,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # RUN
-    args.load_dir = abspath("highlights/results/run_2022-10-24_10:17:16_434435")
     args.agent_path = abspath("Agents/agent_1")
     args.n_traces = 2
     args.fps = 5
