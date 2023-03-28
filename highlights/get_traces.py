@@ -15,10 +15,10 @@ def get_single_trace(env, agent, trace_idx, agent_traces, states_dict, args):
     """Implement a single trace while using the Trace and State classes"""
     trace = Trace()
     # ********* Implement here *****************
-    curr_obs = env.reset()
+    obs = env.reset()
     done = False
     while not done:
-        a = agent.act(curr_obs)
+        a = agent.act(obs)
         obs, r, done, infos = env.step(a)
 
         """Generate State"""
