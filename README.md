@@ -62,7 +62,8 @@ The example implementation for the highway domain requires the following reposit
 
 **Notice: After installing rl-agents you'll need to downgrade gym to the required version (0.19)**
 
-
+* pandas < 2.0
+* numpy <= 1.21.5  
 
 
 
