@@ -58,8 +58,7 @@ The example implementation for the highway domain requires the following reposit
 
 *  [rl-agents](https://github.com/eleurent/rl-agents) - **IMPORTANT** this repository has been updated and no longer works as desired. To overcome this please install the following older version using:
 
-`pip install git+https://github.com/eleurent/rl-agents.git@02e03038e3dba7c2eed5b6ae64b08f0f7bd3706c`
-
+`pip install git+https://github.com/eleurent/rl-agents.git@d55126007fcc5d2a882843f6c3a63000b4fc7c92`
 
 **Notice: After installing rl-agents you'll need to downgrade gym to the required version (0.19)**
 
